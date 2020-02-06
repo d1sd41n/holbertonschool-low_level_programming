@@ -12,9 +12,9 @@ int main(void)
 	{
 		for (j = 48; j <= 57; j++)
 		{
-			putchar(j);
 			putchar(i);
-			if (i == '9')
+			putchar(j);
+			if (i == 57 && j == 57)
 				break;
 			putchar(',');
 			putchar(' ');
