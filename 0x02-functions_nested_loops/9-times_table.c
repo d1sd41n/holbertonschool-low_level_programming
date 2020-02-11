@@ -1,7 +1,6 @@
 #include "holberton.h"
 /**
- * times_table - fisadsdsadasdf
- * 
+ * times_table - fisadsdsadasd
  * Return: none
  */
 void times_table(void)
@@ -10,12 +9,12 @@ void times_table(void)
 
 	for (r = 0; r <= 9; r++)
 	{
-		for (c = 0; c<= 9; c++)
+		for (c = 0; c <= 9; c++)
 		{
 			aux = r * c;
 			if (c == 0)
 			{
-				_putchar(aux + '0');	
+				_putchar(aux + '0');
 			}
 			else if (aux < 10)
 			{
