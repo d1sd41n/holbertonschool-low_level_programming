@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_rev - wricdwcwc
+ * puts2 - wricdwcwc
  * @str: pointer
  * Return: none
  */
