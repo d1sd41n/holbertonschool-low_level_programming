@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * *_strncpy - writes nudscfdsmbers
+ * *_strncat - writes nudscfdsmbers
  * @dest: pointer
  * @src: pointer
+ * @n: pointer
  * Return: none
  */
 char *_strncat(char *dest, char *src, int n)
