@@ -1,9 +1,26 @@
 #include "holberton.h"
 /**
- * puts_half - writes nudscfdsmbers
- * @str: pointer
- * Return: none
+ * *_strchr - locates a char
+ * @s: pointer to char array
+ * @c: char
+ * Return: char
  */
-void puts_half(char *str)
+char *_strchr(char *s, char c)
 {
+	int i;
+	char *p;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+		{
+			p = &s[i];
+			break;
+		}
+		i++;
+	}
+	return (p);
+
+
 }
