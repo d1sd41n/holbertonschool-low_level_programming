@@ -29,19 +29,13 @@ char *argstostr(int ac, char **av)
 	m = 0;
 	for (i = 0; i < ac; i++)
 	{
-		j = 0;
-		while (1)
+		for (j = 0; av[i][j]; j++)
 		{
-			if (av[i][j] == '\0')
-			{
-				s[m] = '\n';
-				m++;
-				break;
-			}
 			s[m] = av[i][j];
 			m++;
-			j++;
 		}
+		s[m] = '\n';
+		m++;
 	}
 	s[m] = '\0';
 	return (s);
