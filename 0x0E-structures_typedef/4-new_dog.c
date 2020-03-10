@@ -32,9 +32,9 @@ char *_strdup(char *str)
 
 /**
  * *new_dog - writes nudscfdsmbers
- * @d: name
- * @d: age
- * @d: *owner
+ * @name: name
+ * @age: age
+ * @owner: *owner
  * Return: none
  */
 dog_t *new_dog(char *name, float age, char *owner)
