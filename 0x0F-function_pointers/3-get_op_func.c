@@ -18,7 +18,6 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	printf("get_op_func %s \n", s);
 	while (i < 5)
 	{
 		if (ops[i].op[0] == s[0])
