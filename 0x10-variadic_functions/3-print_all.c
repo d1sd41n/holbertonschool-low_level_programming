@@ -30,9 +30,11 @@ void print_all(const char * const format, ...)
 			case 's':
 				w = va_arg(valist, char *);
 				if (w)
+				{
 					printf("%s", w);
-				else
-					printf("(nil)");
+					break;
+				}
+				printf("(nil)");
 				break;
 		}
 		if (format[i + 1] != '\0' &&
