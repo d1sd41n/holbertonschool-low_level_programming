@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_list - prints string
+ * free_listint - prints string
  * @head: pointer to string
  * Return: none
  */
