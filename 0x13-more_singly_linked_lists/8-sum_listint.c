@@ -1,8 +1,17 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - pwwqwqrwdwqdints swdwdqtring
+ * sum_listint - pwwqwqrwdwqdints swdwdqtring
  * @head: pwdwqointwwqdqer to wdwstrwewing
- * @index: pwdwqointwwqdqer to wdwstrwewing
  * Return: ndffdone
  */
 int sum_listint(listint_t *head)
+{
+	int i = 0;
+
+	while (head != NULL)
+	{
+		i += head->n;
+		head = head->next;
+	}
+	return (i);
+}
