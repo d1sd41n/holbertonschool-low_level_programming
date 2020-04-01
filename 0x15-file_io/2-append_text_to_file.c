@@ -7,14 +7,13 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	ssize_t esc;
-	int leer, i = 0;
+	int leer, esc, i = 0;
 
 	leer = open(filename, O_APPEND | O_WRONLY);
 	if (leer == -1)
 		return (-1);
 
-	for (i = 0; text_content[i] != '\0' && text_content != NULL; i++)
+	for (i = 0; text_content && text_content[i]; i++)
 		;
 
 	if (i > 0)
