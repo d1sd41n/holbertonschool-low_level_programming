@@ -7,7 +7,8 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int leer, esc, i = 0;
+	ssize_t esc;
+	int leer, i = 0;
 
 	leer = open(filename, O_APPEND | O_WRONLY);
 	if (leer == -1)
