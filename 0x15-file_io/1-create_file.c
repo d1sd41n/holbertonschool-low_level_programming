@@ -21,7 +21,10 @@ int create_file(const char *filename, char *text_content)
 
 	esc = write(leer, text_content, i);
 	if (esc == -1)
+	{
+		close(leer);
 		return (-1);
+	}
 	close(leer);
 	return (1);
 }
